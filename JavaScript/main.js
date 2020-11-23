@@ -7,7 +7,7 @@ const renderCalendar = () => {
    * Variables
    */
 
-  date.setDate(7); // vad gör denna variabel?
+  date.setDate(0); // Ställer in vilken veckodag som är det första datumet på aktuell månad. 0 = Söndag. (TO DO: Verkar vara problem när man skapar kalender som börjar på en måndag)
   const monthDays = document.querySelector(".days");
   const lastDay = new Date(
     date.getFullYear(),
